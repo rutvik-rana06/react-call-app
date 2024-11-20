@@ -8,4 +8,7 @@ export default defineConfig({
     port: 3000,
   },
   plugins: [react(), nodePolyfills()],
+  build: {
+    commonjsOptions: { transformMixedEsModules: true },
+  }
 })
